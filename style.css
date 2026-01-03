@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background:#F5E3E0;
+}
+
+/* Header */
+header {
+    background-color:#ff6f61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color:#7C2D12;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background: url('https://images.unsplash.com/photo-1590080872715-06c79554792e?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+    color:#D282A6;
+}
+
+.hero h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.hero button {
+    padding: 15px 30px;
+    font-size: 1em;
+    border: none;
+    background-color: #3A3238;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.hero button:hover {
+    background-color: #ff896a;
+}
+
+/* Section Styles */
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff6f61;
+}
+
+section p {
+    font-size: 1.1em;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Footer */
+footer {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Ice Cream Animation Styles */
+.ice-cream-animation {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+
+.ice-cream {
+    position: relative;
+    width: 100px;
+    height: 150px;
+    animation: bounce 2s infinite;
+}
+
+.cone {
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid #D2691E;
+}
+
+.scoop {
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 80px;
+    height: 80px;
+    background-color: #FF69B4;
+    border-radius: 50%;
+}
+
+.sprinkles {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    animation: sprinkle-fall 1s infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes sprinkle-fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(10px);
+    }
+}
